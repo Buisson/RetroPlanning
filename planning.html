@@ -2,8 +2,10 @@
 
 <html>
 	<head>
+		<title>HTML retro planning :D</title>
 		<meta charset="UTF-8" />
 		<link rel='stylesheet' href="style.css" type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	</head>
 	<body>
 	<style>
@@ -151,15 +153,40 @@
 					<div>Développement sur le pipe de vente : ajout de produit au panier, règles métiers sur les réductions, sauvegarde des panier</div>
 				</td>
 				<td>
+					<div>FEEDBACK</div>
+					<div>Debug divers sur l'application de vente</div>
 					<div>Développement sur la partie compte (changement de style) + affichage de la liste des commandes et gestion des carnets d'adresses.</div>
+					<div>Changement de style pour le changement de compte vendeur.</div>
+					<div>Affichage de la liste des vendeurs et possibilité de se connecter facilement entres les différents vendeurs du magasin.</div>
 				</td>
 				<td>
-					<div></div>
+					<div>FEEDBACK</div>
+					<div>Debug divers sur l'application de vente</div>
+					<div>Communication entre mon application et le backoffice existant (C# .Net et ASP classique)</div>
+					<div>Prise de screens pour le rapport</div>
+					<div>Ecriture d'un fichier pour qu'une autre personne reprenne le projet, avec la liste des points critiques et des choses à faire</div>
 				</td>
 				<td>
-					<div></div>
+					<div>FEEDBACK</div>
+					<div>Netoyage du code, préparation de scripts utiles pour le projet.</div>
+					<div>Réunion avec Corentin Didieux et Sebastien Saulnier pour la passation du projet</div>
 				</td>
 			</tr>
 		</table>
+
+
+		<script>
+			$(document).ready(function(){
+				setInterval(function(){
+					if($("title").html() == "HTML retro planning :D"){
+						$("title").html("HTML retro planning :)");
+					}
+					else{
+						$("title").html("HTML retro planning :D");
+					}
+				},1000);
+			});
+		</script>
+
 	</body>
 </html>
